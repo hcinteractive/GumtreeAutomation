@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AdsRenewalAutomation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="Gumtree Ads Renewal Automation" Height="250" Width="525" ResizeMode="NoResize" Icon="/images/icon.ico">
+    <Grid Margin="10,0,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <!--<Image Source="/images/animated_loading.gif" x:Name="Loader" Grid.Column="0" Grid.Row="0" Visibility="Collapsed"></Image>-->
+        <TextBlock x:Name="Loader" Grid.Column="0" Grid.Row="0" Visibility="Collapsed" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Titillium Up">Working...</TextBlock>
+        <Grid x:Name="FormGrid" Grid.Column="0" Grid.Row="0" Visibility="Visible">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Label Content="Username" HorizontalAlignment="Left" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" FontSize="16" FontFamily="Titillium Bd"/>
+            <Label Content="Password" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" FontSize="16" FontFamily="Titillium Bd" />
+            <TextBox x:Name="usernameField" Grid.Row="0" Grid.Column="1" Height="47" Margin="0,9,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="26" FontFamily="Titillium Bd" />
+            <PasswordBox x:Name="passwordField" Grid.Row="1" PasswordChar="*" Grid.Column="1" Height="46" Margin="0,9,0,0" VerticalAlignment="Top" FontSize="26" FontFamily="Titillium Bd" />
+        </Grid>
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0">
+                <Button Click="StartButtonClick" VerticalAlignment="Center" Margin="0,5,10,0" HorizontalAlignment="Right" Cursor="Hand" BorderBrush="Transparent" Background="Transparent" x:Name="StartButton">
+                    <Image Source="/images/route.png" Height="70" />
+                </Button>
+                <Button Click="StopButtonClick" VerticalAlignment="Center" Margin="0,5,10,0" HorizontalAlignment="Right" Cursor="Hand" BorderBrush="Transparent" Background="Transparent" Visibility="Collapsed" x:Name="StopButton">
+                    <Image Source="/images/stop.png" Height="70" />
+                </Button>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

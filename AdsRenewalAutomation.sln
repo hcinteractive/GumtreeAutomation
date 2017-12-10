@@ -5,16 +5,27 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdsRenewalAutomation", "AdsRenewalAutomation\AdsRenewalAutomation.csproj", "{7365EA80-17F7-44E5-9A89-43509BB03B71}"
 EndProject
+Project("{840C416C-B8F3-42BC-B0DD-F6BB14C9F8CB}") = "AdsRenewalAutomationSetup", "AdsRenewalAutomationSetup\AdsRenewalAutomationSetup.aiproj", "{1101DA43-D89F-4D52-8D74-E2C93AA471AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		DefaultBuild|Any CPU = DefaultBuild|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7365EA80-17F7-44E5-9A89-43509BB03B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7365EA80-17F7-44E5-9A89-43509BB03B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7365EA80-17F7-44E5-9A89-43509BB03B71}.DefaultBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{7365EA80-17F7-44E5-9A89-43509BB03B71}.DefaultBuild|Any CPU.Build.0 = Debug|Any CPU
 		{7365EA80-17F7-44E5-9A89-43509BB03B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7365EA80-17F7-44E5-9A89-43509BB03B71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1101DA43-D89F-4D52-8D74-E2C93AA471AF}.Debug|Any CPU.ActiveCfg = DefaultBuild
+		{1101DA43-D89F-4D52-8D74-E2C93AA471AF}.Debug|Any CPU.Build.0 = DefaultBuild
+		{1101DA43-D89F-4D52-8D74-E2C93AA471AF}.DefaultBuild|Any CPU.ActiveCfg = DefaultBuild
+		{1101DA43-D89F-4D52-8D74-E2C93AA471AF}.DefaultBuild|Any CPU.Build.0 = DefaultBuild
+		{1101DA43-D89F-4D52-8D74-E2C93AA471AF}.Release|Any CPU.ActiveCfg = DefaultBuild
+		{1101DA43-D89F-4D52-8D74-E2C93AA471AF}.Release|Any CPU.Build.0 = DefaultBuild
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
